@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lugares de interes</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Lugares de interés</h1>
+  <div id="map"></div>
+  <div id="lugaresInteres">
+    <img src="svg/bank.svg" alt="Tu Canton" onclick="placeByType('bank')" id="bank">
+    <img src="svg/shopping_mall.svg" alt="Tu Canton" onclick="placeByType('shopping_mall')" id="shopping_mall">
+    <img src="svg/hospital.svg" alt="Tu Canton" onclick="placeByType('hospital')" id="hospital">
+    <img src="svg/school.svg" alt="Tu Canton" onclick="placeByType('school')" id="school">
+    <img src="svg/park.svg" alt="Tu Canton" onclick="placeByType('park')" id="park">
+    <img src="svg/supermarket.svg" alt="Tu Canton" onclick="placeByType('supermarket')" id="supermarket">
+    <img src="svg/subway_station.svg" alt="Tu Canton" onclick="placeByType('subway_station')" id="subway_station">
+    <img src="svg/movie_theater.svg" alt="Tu Canton" onclick="placeByType('movie_theater')" id="movie_theater">
+  </div>
+  <div id = "boton">
+  </div>
+  <script src="app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-UYZqBwtp8JJTAdE9O76n3mV5W_e1UOY&&libraries=places&callback=initMap"></script>
+</body>
+</html>
